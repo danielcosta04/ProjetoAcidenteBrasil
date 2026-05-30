@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Acidentes de Trânsito — G2</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f6f8;
+      color: #222;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f172a, #1d4ed8);
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.4rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-top: 12px;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      background: white;
+      margin-bottom: 24px;
+      padding: 28px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      color: #1d4ed8;
+      margin-top: 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      background: #f8fafc;
+      border-left: 5px solid #1d4ed8;
+      padding: 16px;
+      border-radius: 8px;
+    }
+
+    .button {
+      display: inline-block;
+      margin: 8px 8px 8px 0;
+      padding: 12px 18px;
+      background: #1d4ed8;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .button.secondary {
+      background: #334155;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      background: #0f172a;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Dashboard Analítico de Acidentes de Trânsito no Brasil</h1>
+    <p>Projeto de análise e visualização de dados com Python, Pandas, Matplotlib, Seaborn e Streamlit</p>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Sobre o projeto</h2>
+      <p>
+        Este projeto apresenta uma investigação detalhada sobre os padrões de acidentes de trânsito no Brasil entre os anos de 2015 e 2024, identificando os principais impactos sociais, econômicos e humanos gerados por essas ocorrências.
+      </p>
+      <p>
+        A proposta demonstra um fluxo completo de inteligência analítica: engenharia de atributos, tratamento de dados, consolidação de indicadores fundamentais, construção de gráficos estatísticos e um painel dinâmico voltado para suporte à tomada de decisões em segurança pública e saúde.
+      </p>
+    </section>
+
+    <section>
+      <h2>Perguntas de negócio</h2>
+      <ul>
+        <li>O número de acidentes aumentou ou diminuiu ao longo do tempo?</li>
+        <li>Quais estados e regiões concentram as ocorrências mais críticas?</li>
+        <li>Quais horários e períodos do ano concentram mais acidentes?</li>
+        <li>Quais tipos de sinistros são mais frequentes nas rodovias?</li>
+        <li>Há relação direta entre as condições climáticas e os acidentes?</li>
+        <li>Quais localidades geográficas registram o maior número de vítimas fatais?</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Indicadores analisados (KPIs)</h2>
+      <div class="grid">
+        <div class="card"><strong>Total de Acidentes</strong><br>Soma geral de ocorrências registradas na base.</div>
+        <div class="card"><strong>Total de Feridos</strong><br>Volume absoluto de vítimas com lesões corporais.</div>
+        <div class="card"><strong>Total de Óbitos</strong><br>Soma agregada de vítimas fatais envolvidas nos eventos.</div>
+        <div class="card"><strong>Fatores Críticos</strong><br>Mapeamento do estado, horário e tipo de acidente com maior incidência.</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Tecnologias utilizadas</h2>
+      <div class="grid">
+        <div class="card">Python</div>
+        <div class="card">Pandas</div>
+        <div class="card">Matplotlib</div>
+        <div class="card">Seaborn</div>
+        <div class="card">Streamlit</div>
+        <div class="card">Plotly & NumPy</div>
+        <div class="card">SQLAlchemy & SQLite</div>
+        <div class="card">GitHub Pages</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Arquivos do projeto</h2>
+      <p>Acesse a árvore estruturada e os componentes principais desenvolvidos no VS Code:</p>
+
+      <a class="button" href="README.md">Ver README</a>
+      <a class="button secondary" href="notebooks/analise_acidentes.ipynb">Ver Notebook (.ipynb)</a>
+      <a class="button secondary" href="dados/simulacao_acidentes_transito_brasil.csv">Baixar Dataset (CSV)</a>
+    </section>
+
+    <section>
+      <h2>Dashboard interativo</h2>
+      <p>
+        O painel estratégico foi publicado na nuvem por meio do Streamlit Cloud, permitindo a filtragem interativa por ano, mês, região, estado, severidade do acidente, clima e período do dia.
+      </p>
+      
+      <a class="button" href="https://seu-link-de-acidentes.streamlit.app/" target="_blank">Acessar Dashboard Streamlit</a>
+    </section>
+
+    <section>
+      <h2>Objetivo pedagógico</h2>
+      <p>
+        Este repositório cumpre as exigências estruturais e técnicas da avaliação G2. O escopo do projeto foca na capacidade de organizar soluções profissionais, documentar insights de forma limpa e extrair visões agregadas estruturadas para comunicação executiva.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Projeto G2 — Ciência e Análise de Dados com Python</p>
+  </footer>
+
+</body>
+</html>

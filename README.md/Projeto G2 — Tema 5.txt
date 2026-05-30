@@ -1,0 +1,206 @@
+Projeto G2 — Tema 5
+Acidentes de Trânsito no Brasil
+________________________________________
+1. Contextualização
+Os acidentes de trânsito representam um dos principais problemas de segurança pública e saúde no Brasil, causando impactos sociais, econômicos e humanos significativos.
+A análise de acidentes permite identificar:
+•	regiões críticas; 
+•	horários de maior risco; 
+•	tipos mais frequentes de ocorrência; 
+•	fatores associados; 
+•	padrões temporais e geográficos. 
+Neste projeto, o aluno deverá desenvolver uma aplicação analítica para investigar padrões de acidentes de trânsito no Brasil entre os anos de 2015 e 2024.
+________________________________________
+2. Objetivo do Projeto
+Desenvolver um projeto de análise e visualização de dados capaz de investigar a evolução dos acidentes de trânsito no Brasil.
+O projeto deverá permitir:
+•	identificar estados e regiões mais críticas; 
+•	analisar horários e períodos de maior risco; 
+•	investigar fatores associados aos acidentes; 
+•	analisar gravidade e vítimas; 
+•	construir visualizações interativas. 
+________________________________________
+3. Perguntas Orientadoras
+O projeto deverá buscar responder:
+•	Quais estados apresentam mais acidentes? 
+•	Quais horários concentram mais ocorrências? 
+•	Existem períodos do ano mais críticos? 
+•	Quais tipos de acidente são mais frequentes? 
+•	Há relação entre clima e acidentes? 
+•	Quais regiões apresentam maior número de vítimas fatais? 
+•	O número de acidentes aumentou ou diminuiu ao longo do tempo? 
+________________________________________
+4. Base de Dados
+Será disponibilizado um dataset simulado contendo dados relacionados a acidentes de trânsito no Brasil.
+Arquivo fornecido
+simulacao_acidentes_transito_brasil.csv
+________________________________________
+5. Estrutura do Dataset
+O dataset deverá possuir colunas semelhantes às seguintes:
+Coluna	Descrição
+ano	Ano da ocorrência
+mes	Mês da ocorrência
+data	Data da ocorrência
+regiao	Região do Brasil
+uf	Estado
+municipio	Município
+rodovia	Rodovia ou via
+tipo_acidente	Tipo do acidente
+condicao_climatica	Clima no momento
+periodo_dia	Manhã, tarde, noite ou madrugada
+acidentes	Quantidade de acidentes
+feridos	Quantidade de feridos
+obitos	Quantidade de óbitos
+veiculos_envolvidos	Quantidade de veículos
+nivel_gravidade	Baixo, Médio, Alto, Crítico
+________________________________________
+6. Tecnologias Obrigatórias
+O projeto deverá utilizar obrigatoriamente:
+•	Python 
+•	Pandas 
+•	Matplotlib 
+•	Seaborn 
+•	Streamlit 
+•	GitHub 
+________________________________________
+7. Tecnologias Recomendadas
+O aluno poderá utilizar:
+•	SQLAlchemy; 
+•	Plotly; 
+•	Folium; 
+•	NumPy; 
+•	SQLite. 
+________________________________________
+8. Funcionalidades Obrigatórias
+O dashboard deverá possuir:
+•	KPIs; 
+•	filtros interativos; 
+•	gráficos temporais; 
+•	comparação regional; 
+•	análise por tipo de acidente; 
+•	interpretação textual; 
+•	conclusão executiva. 
+________________________________________
+9. KPIs Esperados
+O projeto deverá apresentar pelo menos:
+KPI	Descrição
+Total de acidentes	Soma geral
+Total de feridos	Soma de vítimas
+Total de óbitos	Soma de vítimas fatais
+Estado mais crítico	Ranking estadual
+Horário mais perigoso	Faixa horária crítica
+Tipo de acidente mais frequente	Maior incidência
+________________________________________
+10. Análises Esperadas
+O aluno deverá realizar:
+1.	Evolução temporal dos acidentes; 
+2.	Comparação entre estados; 
+3.	Comparação entre regiões; 
+4.	Ranking de municípios críticos; 
+5.	Análise por horário; 
+6.	Análise por clima; 
+7.	Análise da gravidade; 
+8.	Interpretação dos resultados. 
+________________________________________
+11. Visualizações Obrigatórias
+O dashboard deverá conter pelo menos:
+Visualização	Objetivo
+Linha temporal	Evolução dos acidentes
+Barras por estado	Comparação regional
+Barras por tipo de acidente	Frequência
+Heatmap por horário	Horários críticos
+Pizza por clima	Condições climáticas
+Tabela dinâmica	Exploração detalhada
+
+
+________________________________________
+12. Filtros Obrigatórios
+O dashboard deverá permitir:
+•	filtro por ano; 
+•	filtro por mês; 
+•	filtro por região; 
+•	filtro por estado; 
+•	filtro por tipo de acidente; 
+•	filtro por período do dia; 
+•	filtro por nível de gravidade. 
+________________________________________
+13. Estrutura Obrigatória do Projeto
+O projeto deverá possuir a seguinte estrutura:
+projeto-acidentes-transito/
+│
+├── app.py
+├── requirements.txt
+├── README.md
+├── index.html
+├── dados/
+│   └── simulacao_acidentes_transito_brasil.csv
+├── notebooks/
+│   └── analise_acidentes.ipynb
+├── database/
+└── imagens/
+________________________________________
+14. Notebook de Análise
+O notebook deverá conter:
+1.	Introdução; 
+2.	Contextualização do problema; 
+3.	Explicação da base; 
+4.	Leitura dos dados; 
+5.	Limpeza e preparação; 
+6.	Engenharia de atributos; 
+7.	KPIs; 
+8.	Visualizações; 
+9.	Interpretação; 
+10.	Conclusão. 
+________________________________________
+15. Dashboard Streamlit
+O dashboard deverá conter:
+•	título do projeto; 
+•	descrição do problema; 
+•	KPIs; 
+•	filtros; 
+•	gráficos; 
+•	interpretação textual; 
+•	conclusão executiva. 
+________________________________________
+16. Publicação Obrigatória
+O projeto deverá ser publicado em:
+Plataforma	Objetivo
+GitHub	Código-fonte
+GitHub Pages	Página do projeto
+Streamlit Cloud	Dashboard
+________________________________________
+17. Entregas Obrigatórias
+O aluno deverá entregar:
+1.	Link do GitHub; 
+2.	Link do GitHub Pages; 
+3.	Link do Streamlit; 
+4.	Notebook .ipynb; 
+5.	Código app.py; 
+6.	Base de dados utilizada. 
+________________________________________
+18. Critérios Específicos de Avaliação
+Critério	O que será avaliado
+Tratamento dos dados	Limpeza e preparação
+KPIs	Relevância analítica
+Visualizações	Clareza e qualidade
+Dashboard	Interatividade
+Interpretação	Capacidade analítica
+Organização	Estrutura profissional
+Publicação	Funcionamento online
+________________________________________
+19. Desafios Avançados (Opcional)
+O aluno poderá implementar:
+•	mapas interativos; 
+•	persistência em SQLite; 
+•	dashboard multipágina; 
+•	gráficos avançados com Plotly; 
+•	upload de CSV; 
+•	consultas SQL com SQLAlchemy. 
+________________________________________
+20. Considerações Finais
+Mais importante do que gerar gráficos é:
+•	compreender os padrões dos acidentes; 
+•	interpretar fatores de risco; 
+•	identificar regiões críticas; 
+•	comunicar resultados de forma clara; 
+•	desenvolver uma aplicação analítica profissional.

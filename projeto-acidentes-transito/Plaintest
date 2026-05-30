@@ -1,0 +1,12 @@
+projeto-acidentes-transito/
+│
+├── dados/
+│   └── simulacao_acidentes_transito_brasil.csv
+├── notebooks/
+│   └── analise_acidentes.ipynb
+├── database/
+├── imagens/
+├── app.py
+├── requirements.txt
+├── README.md
+└── index.html
